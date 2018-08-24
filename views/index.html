@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>留言板</title>
+    <!--引入bootstrap样式表-->
+    <link rel="stylesheet" href="/public/lib/bootstrap-3.3.7-dist/css/bootstrap.css" type="text/css">
+    <!--自己的样式文件-->
+    <link rel="stylesheet" href="/public/css/index.css" type="text/css">
+</head>
+<body>
+<div class="container" id="box">
+    <!--留言板头部-->
+    <header id="header">
+    <h1>留言板</h1>
+    <a href="/post"><button type="button" class="btn btn-success">发表留言</button></a>
+    </header>
+    <hr>
+    <!--评论信息-->
+    <main id="comments">
+        <div class="table-responsive">
+            <table class="table" >
+                {{each comments}}
+                <tr>
+                    <td>{{$value.name}}</td>
+                    <td>{{$value.content}}</td>
+                    <td>{{$value.date}}</td>
+                </tr>
+                {{/each}}
+            </table>
+        </div>
+    </main>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--引入jQuery文件-->
+<script src="/public/lib/jQuery/jquery-1.12.1.js"></script>
+<script src="/public/lib/html5shiv-3.7.3/html5shiv.js"></script>
+<!--引入bootstrap的js文件-->
+<script src="/public/lib/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<!--引入自定义js文件-->
+<script src="/public/js/index.js"></script>
+</body>
+</html>

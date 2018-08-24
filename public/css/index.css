@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/*外部大容器*/
+#box{
+    width: 80%;
+    height:1000px;
+    padding-top: 20px;
+
+}
+/*头部*/
+#header button{
+    margin-top: 20px;
+}
+
+/*留言内容*/
+#comments table{
+    border: 1px solid #ddd;
+}
+
+
+
+
